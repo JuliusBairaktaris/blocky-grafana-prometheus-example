@@ -1,5 +1,3 @@
-version: "2.1"
-
 services:
   blocky:
     image: spx01/blocky
@@ -40,8 +38,8 @@ services:
     environment:
       - GF_PANELS_DISABLE_SANITIZE_HTML=true
       - GF_INSTALL_PLUGINS=grafana-piechart-panel
-    restart: always    
+    restart: always
 
 volumes:
-    prometheus_data: {}
-    grafana_data: {}
+  prometheus_data: {}
+  grafana_data: {}
